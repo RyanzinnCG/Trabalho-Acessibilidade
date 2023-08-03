@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type="text/css" href="style.css"/>
+    
+    
+    <title>Acessibilidade Digital</title>
+</head>
+<body>
+    <h1>Trabalho de Acessibilidade Digital - Perninha</h1>
+    
+  
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    
+    <button onclick="increaseFontSize()">Aumentar</button>
+    <button onclick="decreaseFontSize()">Diminuir</button>
+    <button onclick="resetFontSize()">Atualizar</button>
+
+    
+
+
+    <h1>Acessibilidade Digital: Tornando a Web Inclusiva para Todos</h1>
+    <h2 >A acessibilidade digital refere-se à prática de tornar sites, aplicativos e conteúdo online acessíveis a todas as pessoas, incluindo aqueles com deficiências visuais, auditivas, motoras ou cognitivas. Garantir a acessibilidade digital significa criar uma web que possa ser compreendida, navegada e utilizada por todas as pessoas, independentemente de suas capacidades.</p> 
+        
+        A acessibilidade digital é essencial para promover a inclusão e a igualdade de oportunidades. Uma web acessível permite que pessoas com deficiências sejam parte ativa da sociedade, possam realizar tarefas cotidianas e tenham acesso a informações necessárias. Além disso, a acessibilidade beneficia a todos os usuários, tornando a navegação mais fácil, melhorando a experiência geral e permitindo que uma variedade de dispositivos seja usada para acessar o conteúdo.</p> 
+        
+        Nosso compromisso com a acessibilidade digital é uma prioridade fundamental. Para alcançar esse objetivo, adotamos diversas práticas:</p> 
+     
+        1. Marcação Semântica: Utilizamos tags HTML adaptados para criar uma estrutura clara e organizada, permitindo que leitores de tela e outros dispositivos entendam a autoridade do conteúdo.</p> 
+
+        2. Descrição de Imagens: Todas as imagens em nosso site possuem atributos alt, fornecendo uma descrição textual do conteúdo visual, o que auxilia os usuários com deficiência visual a entenderem o contexto das imagens.</p> 
+
+        3. Contraste Adequado: Garantimos que haja um contraste suficiente entre o texto e o plano de fundo, facilitando a leitura para usuários com baixa visão.</p> 
+
+        4. Navegação Simplificada: Criamos uma ordem de tabulação lógica para facilitar a navegação por teclado, tornando a experiência mais suave para quem não pode usar um mouse.</p> 
+    </h2>
+    <script>
+       
+        let currentFontSize = 16;
+
+        function increaseFontSize() {
+            currentFontSize += 2;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+        function decreaseFontSize() {
+            currentFontSize -= 2;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+        function resetFontSize() {
+            currentFontSize = 16;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+       
+        function enableHighContrast() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function disableHighContrast() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    font-family: Georgia, Times, serif, sans-serif;
+    line-height: 1.5;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center  ;
+}
+h2{
+    border-radius: 60%;
+    text-align: ju
+    border-left: 1000px;
+}
+p {
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+
+button {
+    background-color: #00BF63;
+    color: white;
+    border: none;
+    padding: 10px 200px;
+    margin-right: 100px;
+   font-size: larger;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #00BF85;
+}
+
+
+.importance-text {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+}
